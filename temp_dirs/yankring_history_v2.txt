@@ -1,0 +1,42 @@
+enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler  title_transmit_bg_color = "#ffe891"  title_transmit_fg_color = "#000000",v
+https://github.com/zavakid/terminator-config,v
+    [global_config]        title_transmit_bg_color = "#d30102"        focus = system        suppress_multiple_term_dialog = True    [keybindings]    [profiles]        [[default]]            palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"            copy_on_selection = True            background_image = None            background_darkness = 0.95            background_type = transparent            use_system_font = False            cursor_color = "#eee8d5"            foreground_color = "#839496"            show_titlebar = False            font = Monospace 11            background_color = "#002b36"        [[solarized-dark]]            palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"            background_color = "#002b36"            background_image = None            cursor_color = "#eee8d5"            foreground_color = "#839496"        [[solarized-light]]            palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"            background_color = "#fdf6e3"            background_image = None            cursor_color = "#002b36"            foreground_color = "#657b83"    [layouts]        [[default]]            [[[child1]]]                type = Terminal                parent = window0                profile = default            [[[window0]]]                type = Window                parent = ""    [plugins],v
+curl https://raw.github.com/ghuntley/terminator-solarized/master/config > ~/.config/terminator/config,v
+" switch windownnoremap <c-h> <c-w>hnnoremap <c-j> <c-w>jnnoremap <c-k> <c-w>knnoremap <c-l> <c-w>l,v
+,V
+,V
+" switch windownnoremap <c-h> <c-w>hnnoremap <c-j> <c-w>jnnoremap <c-k> <c-w>knnoremap <c-l> <c-w>l,v
+/vimrcs,v
+" switch windownnoremap <c-h> <c-w>hnnoremap <c-j> <c-w>jnnoremap <c-k> <c-w>knnoremap <c-l> <c-w>l,v
+hell,V
+scrooloose/syntastic,v
+https://github.com/WolfgangMehner/vim-plugins,v
+$value->bpow(1000);,V
+m,v
+my $value = Math::BigInt->new(2);,V
+'https://github.com/vim-scripts/perl-support.vim',v
+https://github.com/vim-scripts/perl-support.vim,v
+neocomplcache,v
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" => Bundle settings"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""set nocompatiblefiletype offset runtimepath+=~/.vim/bundle/Vundle.vim/call vundle#begin()Plugin 'VundleVim/Vundle.vim'Plugin 'Valloric/YouCompleteMe'Plugin 'majutsushi/tagbar'Plugin 'rkulla/pydiction'Plugin 'https://github.com/vim-perl/vim-perl'call vundle#end()filetype plugin indent on"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" => YouCompleteme settings"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 自动补全配置set completeopt=longest,menu	"让Vim的补全菜单行为与一般IDE一致(参考VimTip1228)autocmd InsertLeave * if pumvisible() == 0|pclose|endif	"离开插入模式后自动关闭预览窗口inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"	"回车即选中当前项"上下左右键的行为 会显示其他信息inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"inoremap <expr> <PageDown> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<PageDown>"inoremap <expr> <PageUp>   pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>""youcompleteme  默认tab  s-tab 和自动补全冲突"let g:ycm_key_list_select_completion=['<c-n>']let g:ycm_key_list_select_completion = ['<Down>']"let g:ycm_key_list_previous_completion=['<c-p>']let g:ycm_key_list_previous_completion = ['<Up>']let g:ycm_confirm_extra_conf=0 "关闭加载.ycm_extra_conf.py提示let g:ycm_collect_identifiers_from_tags_files=1	" 开启 YCM 基于标签引擎let g:ycm_min_num_of_chars_for_completion=2	" 从第2个键入字符就开始罗列匹配项let g:ycm_cache_omnifunc=0	" 禁止缓存匹配项,每次都重新生成匹配项let g:ycm_seed_identifiers_with_syntax=1	" 语法关键字补全"force recomile with syntasticnnoremap <F5> :YcmForceCompileAndDiagnostics<CR>	"nnoremap <leader>lo :lopen<CR>	"open locationlist"nnoremap <leader>lc :lclose<CR>	"close locationlistinoremap <leader><leader> <C-x><C-o>"在注释输入中也能补全let g:ycm_complete_in_comments = 1"在字符串输入中也能补全let g:ycm_complete_in_strings = 1"注释和字符串中的文字也会被收入补全let g:ycm_collect_identifiers_from_comments_and_strings = 0nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR> " 跳转到定义处,v
+nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>	,V
+https://github.com/vim-perl/vim-perl,v
+rkulla/pydiction,v
+majutsushi/tagbar,v
+" 自动补全配置set completeopt=longest,menu	"让Vim的补全菜单行为与一般IDE一致(参考VimTip1228)autocmd InsertLeave * if pumvisible() == 0|pclose|endif	"离开插入模式后自动关闭预览窗口inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"	"回车即选中当前项"上下左右键的行为 会显示其他信息inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"inoremap <expr> <PageDown> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<PageDown>"inoremap <expr> <PageUp>   pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>""youcompleteme  默认tab  s-tab 和自动补全冲突"let g:ycm_key_list_select_completion=['<c-n>']let g:ycm_key_list_select_completion = ['<Down>']"let g:ycm_key_list_previous_completion=['<c-p>']let g:ycm_key_list_previous_completion = ['<Up>']let g:ycm_confirm_extra_conf=0 "关闭加载.ycm_extra_conf.py提示let g:ycm_collect_identifiers_from_tags_files=1	" 开启 YCM 基于标签引擎let g:ycm_min_num_of_chars_for_completion=2	" 从第2个键入字符就开始罗列匹配项let g:ycm_cache_omnifunc=0	" 禁止缓存匹配项,每次都重新生成匹配项let g:ycm_seed_identifiers_with_syntax=1	" 语法关键字补全nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>	"force recomile with syntastic"nnoremap <leader>lo :lopen<CR>	"open locationlist"nnoremap <leader>lc :lclose<CR>	"close locationlistinoremap <leader><leader> <C-x><C-o>"在注释输入中也能补全let g:ycm_complete_in_comments = 1"在字符串输入中也能补全let g:ycm_complete_in_strings = 1"注释和字符串中的文字也会被收入补全let g:ycm_collect_identifiers_from_comments_and_strings = 0nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR> " 跳转到定义处,v
+ "配置默认的ycm_extra_conf.pylet g:ycm_global_ycm_extra_conf = '~/.vim_runtime/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'   "按,jd 会跳转到定义nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>   "打开vim时不再询问是否加载ycm_extra_conf.py配置let g:ycm_confirm_extra_conf=0    "使用ctags生成的tags文件let g:ycm_collect_identifiers_from_tag_files = 1,v
+Bundle,v
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" => Bundle settings""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""",V
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" => Bundle settings""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""",v
+ "使用ctags生成的tags文件,v
+ “打开vim时不再询问是否加载ycm_extra_conf.py配置,v
+ “打开vim时不再询问是否加载ycm_extra_conf.py配置,v
+ “按,jd 会跳转到定义,v
+ “配置默认的ycm_extra_conf.py,v
+You,v
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'   “配置默认的ycm_extra_conf.pynnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>   “按,jd 会跳转到定义let g:ycm_confirm_extra_conf=0    “打开vim时不再询问是否加载ycm_extra_conf.py配置let g:ycm_collect_identifiers_from_tag_files = 1 "使用ctags生成的tags文件,v
+Bundle 'gmarik/vundle',V
+YouCompleteMe/,v
+   Plugin 'VundleVim/Vundle.vim',V
+   " let Vundle manage Vundle, required   Plugin 'VundleVim/Vundle.vim',v
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" => Git gutter (Git diff)""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""",V
+git clone https://github.com/amix/vimrc.git ~/.vim_runtime,v
